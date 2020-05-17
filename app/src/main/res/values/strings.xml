@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ayah Picker</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="time">%1$s</string>
+    <string-array name="name">
+        <item>Hello</item>
+        <item>World</item>
+        <item>Computer</item>
+        <item>File</item>
+        <item>Edit</item>
+        <item>Nav</item>
+        <item>Code</item>
+        <item>values</item>
+        <item>Tools</item>
+        <item>Window</item>
+        <item>Iphone</item>
+        <item>Android</item>
+        <item>Run</item>
+        <item>help</item>
+        <item>View</item>
+    </string-array>
+</resources>

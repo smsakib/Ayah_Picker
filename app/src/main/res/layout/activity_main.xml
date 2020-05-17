@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Check Reference of Alquran"
+        android:background="@drawable/edt_style"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/editTextSurah"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textColor="@color/colorPrimary"
+        android:textCursorDrawable="@color/colorPrimary"
+        android:hint="enter surah number"
+        android:textColorHint="@color/colorPrimary"
+        android:background="@drawable/edt_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTextAyah"
+        android:hint="enter ayah number"
+        android:layout_margin="4dp"
+        android:inputType="number"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textCursorDrawable="@color/colorPrimary"
+        android:background="@drawable/edt_style"
+        android:textAlignment="center"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:text="Favorite"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/buttonbgborder"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:text="Check Ayah"
+            android:textSize="18sp"
+            android:background="@drawable/buttonbgborder"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/buttonSurahIndex"
+            android:text="Al Quran"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/buttonbgborder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:background="@drawable/edt_style"
+        android:padding="4dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewBismillah"
+                android:layout_gravity="center"
+                android:text="بِسْمِ ٱللّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيم"
+                android:textSize="28sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewAyahArabic"
+                android:text="arabic here"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:background="@drawable/edt_style"
+                android:textSize="20sp"
+                android:longClickable="true"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewAyahBn"
+                android:layout_margin="4dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edt_style"
+                android:padding="4dp"
+                android:textAlignment="gravity"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="bangla here"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:text="Save Ayah"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:layout_margin="4dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/buttonbgborder"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
